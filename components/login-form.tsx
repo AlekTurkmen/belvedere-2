@@ -59,7 +59,7 @@ export function LoginForm() {
                 />
                 <FaLinkedin size={20} style={{ color: '#0077b5', position: 'relative', zIndex: 2 }} />
               </div>
-              <span>LinkedIn (Coming Soon)</span>
+              <span>LinkedIn [Coming Soon]</span>
             </Button>
           </div>
           <div className="mt-4 text-center text-sm">
