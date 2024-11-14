@@ -1,37 +1,25 @@
 'use client';
 
 import Link from 'next/link';
-import Logo from '@/components/icons/logo';
-import { usePathname, useRouter } from 'next/navigation';
-import s from './Navbar.module.css';
 
 interface NavlinksProps {
   user?: any;
 }
 
 export default function Navlinks({ user }: NavlinksProps) {
-
   return (
-    <div className="relative flex flex-row justify-between py-4 align-center md:py-6">
-      <div className="flex items-center flex-1">
-        <Link href="/" className={s.logo} aria-label="Logo">
-          <Logo />
-        </Link>
-        <nav className="ml-6 space-x-2 lg:block">
-          <Link href="/" className={s.link}>
-            Pricing
+    <div className="text-white px-6 py-6">
+      <div className="flex flex-wrap justify-between items-center max-w-6xl mx-auto">
+        <div className="flex-1">
+          <Link href="/" className="hover:text-zinc-200 transition">
+            Services
           </Link>
-          {user && (
-            <Link href="/account" className={s.link}>
-              Account
-            </Link>
-          )}
-        </nav>
-      </div>
-      <div className="flex justify-end space-x-8">
-          <Link href="/login" className={s.link}>
+        </div>
+        <div className="flex justify-end flex-1">
+          <Link href="/login" className="hover:text-zinc-200 transition">
             Sign In
           </Link>
+        </div>
       </div>
     </div>
   );

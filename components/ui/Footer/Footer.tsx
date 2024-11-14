@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 
 export default function Footer() {
@@ -14,9 +16,9 @@ export default function Footer() {
           Terms of Use
         </Link>
         <div>
-          <Link href="https://www.linkedin.com/in/alekturkmen/" className="hover:text-zinc-200 transition">
-            &copy; {new Date().getFullYear()} Alek Turkmen All rights reserved.
-          </Link>
+        <Link href="https://www.linkedin.com/in/alekturkmen/" className="hover:text-zinc-200 transition">
+          &copy; {new Date().getFullYear()} Alek Turkmen All rights reserved.
+        </Link>
         </div>
       </div>
     </footer>
