@@ -67,9 +67,9 @@ export function ProgressDemo() {
 
   return (
     <div className="flex flex-col items-center">
-      <Progress value={progress} className="w-[80vw]" />
+      <Progress value={progress} className="w-[80vw] [&>div]:bg-[#438361] bg-zinc-800" />
       <span className="mt-2 text-lg font-semibold">
-        We are about {progress.toFixed(decimalPlaces)}% the way there.
+        We are about <span style={{ color: '#438361' }}>{progress.toFixed(decimalPlaces)}%</span> the way there.
       </span>
     </div>
   )

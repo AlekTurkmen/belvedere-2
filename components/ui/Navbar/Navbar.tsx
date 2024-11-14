@@ -5,7 +5,7 @@ export default function Navbar() {
 
   return (
     <nav className={s.root}>
-      <div className="max-w-6xl px-6 mx-auto">
+      <div className="bg-zinc-900 text-white px-6">
         <Navlinks />
       </div>
     </nav>
