@@ -7,14 +7,16 @@ export default function Footer() {
         <Link href="/" className="hover:text-zinc-200 transition">
           Home
         </Link>
-        <Link href="/" className="hover:text-zinc-200 transition">
+        <Link href="https://help.belvedere.alekturkmen.com/project-belvedere" className="hover:text-zinc-200 transition">
           Privacy Policy
         </Link>
-        <Link href="/" className="hover:text-zinc-200 transition">
+        <Link href="https://help.belvedere.alekturkmen.com/project-belvedere/legal/terms-of-service" className="hover:text-zinc-200 transition">
           Terms of Use
         </Link>
         <div>
-          &copy; {new Date().getFullYear()} Alek Turkmen All rights reserved.
+          <Link href="https://www.linkedin.com/in/alekturkmen/" className="hover:text-zinc-200 transition">
+            &copy; {new Date().getFullYear()} Alek Turkmen All rights reserved.
+          </Link>
         </div>
       </div>
     </footer>
