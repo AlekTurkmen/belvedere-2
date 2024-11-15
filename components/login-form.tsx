@@ -50,15 +50,7 @@ export function LoginForm() {
             <GoogleSignIn />
             <Button variant="outline" className="w-full flex items-center justify-center space-x-0">
               <div style={{ position: 'relative', width: '20px', height: '20px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
-                <span
-                  style={{
-                    backgroundColor: 'white',
-                    width: '12px',
-                    height: '12px',
-                    position: 'absolute',
-                    zIndex: 1,
-                  }}
-                />
+                <span style={{ backgroundColor: 'white', width: '12px', height: '12px', position: 'absolute', zIndex: 1 }} />
                 <FaLinkedin size={20} style={{ color: '#0077b5', position: 'relative', zIndex: 2 }} />
               </div>
               <span>LinkedIn [Coming Soon]</span>
