@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-//import Footer from '@/components/ui/Footer';
 import Navbar from '@/components/ui/Navbar';
 import Footer from '@/components/ui/Footer';
 import localFont from "next/font/local";
+import AuthProvider from '@/components/AuthProvider';
 import "./globals.css";
-
+  
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -25,14 +25,16 @@ export default function RootLayout({children,}: Readonly<{ children: React.React
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Navbar />
-        <main
-          id="skip"
-          className="min-h-[calc(100dvh-4rem)] md:min-h[calc(100dvh-4rem)]"
-        >
-          {children}
-        </main>
-        <Footer />
+        <AuthProvider>
+          <Navbar />
+          <main
+            id="skip"
+            className="min-h-[calc(100dvh-4rem)] md:min-h[calc(100dvh-4rem)]"
+          >
+            {children}
+          </main>
+          <Footer />
+        </AuthProvider>
       </body>
     </html>
   );

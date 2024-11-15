@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Logo from '@/components/icons/logo';
 import { ProgressDemo } from '@/components/ProgressDemo';
 
 export default function Home() {
