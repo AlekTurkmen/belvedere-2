@@ -1,5 +1,6 @@
 import s from './Navbar.module.css';
 import Navlinks from './Navlinks';
+import Link from 'next/link';
 
 export default function Navbar() {
 

@@ -16,13 +16,13 @@ export default function Navlinks({ user }: NavlinksProps) {
             Belvedere
           </Link>
           <div className="relative -right-2 -top-1">
-            <Image
+            {/* <Image
               src="/public/BelvederePenguin.png"
               alt=""
               width={16}
               height={16}
               className="inline-block"
-            />
+            /> */}
           </div>
         </div>
         <div className="flex justify-end flex-1">
