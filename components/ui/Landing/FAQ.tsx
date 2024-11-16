@@ -29,13 +29,13 @@ return (
     <AccordionItem value="item-4">
         <AccordionTrigger>Why are you doing this?</AccordionTrigger>
         <AccordionContent>
-        I'm an entrepreneur. I want to provide value to the world. <br></br>I'm also extremely passionate about networking/recruiting..
+        I'm an entrepreneur. I want to provide value to the world. <br></br>I'm also extremely passionate about networking/recruiting.
         </AccordionContent>
     </AccordionItem>
     <AccordionItem value="item-5">
         <AccordionTrigger>How can I contribute?</AccordionTrigger>
         <AccordionContent>
-        Use the product, give detailed feedback, and spread the word. What part of networking/recruiting gives you a monster headache?
+        Use the product, give detailed feedback, and spread the word. Tell me what part of networking/recruiting gives you a monster headache at alek11221@gmail.com
         </AccordionContent>
     </AccordionItem>
     <AccordionItem value="item-6">

@@ -6,7 +6,7 @@ export default function Intro() {
           This is
       </h3>
       <div className="relative flex items-center justify-start gap-4 mb-12">
-        <h1 className="text-8xl font-bold text-[#438361] z-10 relative mix-blend-exclusion">
+        <h1 className="text-8xl font-bold text-[#438361] z-10">
           Project Belvedere
         </h1>
         <img 

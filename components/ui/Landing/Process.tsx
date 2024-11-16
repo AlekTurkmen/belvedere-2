@@ -28,7 +28,7 @@ export default function Process() {
         {/* Column 2 */}
         <div className="flex flex-col items-center text-center">
           <h3 className="text-2xl font-bold text-white mb-4">
-            2. We Prep You
+            2. We Prepare You
           </h3>
           <img 
             src="/homework-svgrepo-com.svg"
@@ -45,7 +45,7 @@ export default function Process() {
         {/* Column 3 */}
         <div className="flex flex-col items-center text-center">
           <h3 className="text-2xl font-bold text-white mb-4">
-          3. You Get The Job
+          3. And You Get The Job
           </h3>
           <img 
             src="/trophy-svgrepo-com.svg"
