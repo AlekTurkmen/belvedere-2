@@ -9,11 +9,11 @@ export default function Footer() {
         <Link href="/" className="hover:text-zinc-200 transition flex items-center gap-2">
           Belvedere
           <img 
-            className="w-6 h-6 brightness-0 invert" 
-            src="https://www.svgrepo.com/show/322951/penguin.svg" 
-            loading="lazy" 
-            alt="belvedere penguin"
-          />
+              className="w-6 h-6 brightness-0 invert transform scale-x-[-1]" 
+              src="https://www.svgrepo.com/show/322951/penguin.svg" 
+              loading="lazy" 
+              alt="belvedere penguin"
+            />
         </Link>
         <Link href="https://help.belvedere.alekturkmen.com/project-belvedere" className="hover:text-zinc-200 transition">
           Privacy Policy

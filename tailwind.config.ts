@@ -59,6 +59,9 @@ export default {
   				'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
   				border: 'hsl(var(--sidebar-border))',
   				ring: 'hsl(var(--sidebar-ring))'
+  			},
+  			custom: {
+  				green: '#438361'
   			}
   		},
   		borderRadius: {
@@ -82,6 +85,25 @@ export default {
   				to: {
   					height: '0'
   				}
+  			},
+  			slide: {
+  				'0%, 15%, 100%': { 
+  					transform: 'translateX(0)',
+  					color: '#ffffff'
+  				},
+  				'35%, 65%': { 
+  					transform: 'translateX(1rem)',
+  					color: '#438361'
+  				},
+  				'85%': { 
+  					transform: 'translateX(0)',
+  					color: '#ffffff'
+  				}
+  			},
+  			float: {
+  				'0%': { transform: 'translateY(-50px) rotate(-12deg)' },
+  				'50%': { transform: 'translateY(50px) rotate(5deg)' },
+  				'100%': { transform: 'translateY(-50px) rotate(-12deg)' }
   			}
   		},
   		animation: {

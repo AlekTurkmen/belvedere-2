@@ -54,7 +54,7 @@ export default function Navlinks({ user }: NavlinksProps) {
           <Link href="/" className="hover:text-zinc-200 transition flex items-center gap-2">
             Belvedere
             <img 
-              className="w-6 h-6 brightness-0 invert" 
+              className="w-6 h-6 brightness-0 invert transform scale-x-[-1]" 
               src="https://www.svgrepo.com/show/322951/penguin.svg" 
               loading="lazy" 
               alt="belvedere penguin"
