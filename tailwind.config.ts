@@ -104,6 +104,18 @@ export default {
   				'0%': { transform: 'translateY(-50px) rotate(-12deg)' },
   				'50%': { transform: 'translateY(50px) rotate(5deg)' },
   				'100%': { transform: 'translateY(-50px) rotate(-12deg)' }
+  			},
+  			slideBoxes: {
+  				'0%': { transform: 'translateX(0)' },
+  				'100%': { transform: 'translateX(-130%)' }
+  			},
+  			bobbing: {
+  				'0%, 100%': { 
+  					transform: 'translateY(0)',
+  				},
+  				'50%': { 
+  					transform: 'translateY(-30px)',
+  				}
   			}
   		},
   		animation: {

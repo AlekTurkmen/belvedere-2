@@ -107,17 +107,25 @@ function RadialChart({ data, title, description }: {
 
 export default function Stats() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-0">
-      <RadialChart 
-        data={chartData1} 
-        title="80% of jobs" 
-        description="are filled through connections."
-      />
-      <RadialChart 
-        data={chartData2} 
-        title="70% of job openings" 
-        description="are not published publicly."
-      />
+    <div className="flex flex-col w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-4">
+        <RadialChart 
+          data={chartData1} 
+          title="80% of jobs" 
+          description="are filled through connections."
+        />
+        <RadialChart 
+          data={chartData2} 
+          title="70% of job openings" 
+          description="are not published publicly."
+        />
+      </div>
+      
+      <div className="w-full max-w-2xl mx-auto text-center mt-[-100px]">
+        <p className="text-xl md:text-2xl font-semibold text-white bg-[#43836115] rounded-lg">
+          So let's <span className="text-[#438361]">stack the odds in your favor</span> by building a network.
+        </p>
+      </div>
     </div>
   )
 }

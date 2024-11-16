@@ -1,9 +1,9 @@
 export default function Process() {
   return (
-    <div className="flex flex-col w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-0 pb-4 mt-[-4rem]">
+    <div className="flex flex-col w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-0 pb-4 mt-[2rem]">
       {/* Main Title */}
       <h1 className="text-5xl font-bold text-white text-center mb-16">
-        How Does <span className="text-[#438361]">Project Belvedere</span> Work?
+        What Does <span className="text-[#438361]">Project Belvedere</span> Do?
       </h1>
 
       {/* Three Columns */}
@@ -37,7 +37,7 @@ export default function Process() {
           />
           <p className="text-zinc-400">
           How to create your own nepotism.<br></br><br></br>
-          Step by step instructions on from start to finish.<br></br><br></br>
+          Step by step instructions on networking.<br></br><br></br>
           How to conduct yourself socially and professionally.<br></br><br></br>
           </p>
         </div>
