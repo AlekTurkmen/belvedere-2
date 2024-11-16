@@ -47,6 +47,9 @@ export default function Navlinks({ user }: NavlinksProps) {
     }
   };
 
+  console.log('Avatar URL:', user?.user_metadata?.avatar_url)
+  console.log('Full user metadata:', user?.user_metadata)
+
   return (
     <div className="text-white px-6 py-6">
       <div className="flex flex-wrap justify-between items-center max-w-6xl mx-auto">
@@ -72,11 +75,31 @@ export default function Navlinks({ user }: NavlinksProps) {
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="flex items-center gap-2 hover:text-zinc-200 transition"
               >
-                <img 
-                  src={user.user_metadata.avatar_url} 
-                  alt="Profile" 
-                  className="w-8 h-8 rounded-full"
-                />
+                {user?.user_metadata?.avatar_url ? (
+                  <img 
+                    src={user.user_metadata.avatar_url} 
+                    alt={user.user_metadata.full_name || "Profile"} 
+                    className="w-8 h-8 rounded-full object-cover"
+                    onError={(e) => {
+                      // Hide the broken image
+                      e.currentTarget.style.display = 'none';
+                      // Add the styled container with initials
+                      const parent = e.currentTarget.parentElement;
+                      if (parent) {
+                        parent.classList.add('w-8', 'h-8', 'rounded-full', 'flex', 'items-center', 'justify-center');
+                        parent.style.backgroundColor = '#438361';
+                        parent.textContent = user.user_metadata.full_name?.[0] || '?';
+                      }
+                    }}
+                  />
+                ) : (
+                  <div 
+                    className="w-8 h-8 rounded-full flex items-center justify-center text-white"
+                    style={{ backgroundColor: '#438361' }}
+                  >
+                    {user?.user_metadata?.full_name?.[0] || '?'}
+                  </div>
+                )}
                 <span>{user.user_metadata.full_name}</span>
               </button>
 
